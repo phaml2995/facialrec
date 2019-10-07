@@ -85,6 +85,10 @@ loadUser = (data) => {
     this.setState({input: event.target.value});
   }
 
+  onKeyPress = (event) => {
+    this.setState({input: event.target.value});
+  }
+
   onRouteChange =(route) =>{
     if (route === 'signout'){
       this.setState(initialState)
