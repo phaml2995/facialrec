@@ -142,7 +142,7 @@ loadUser = (data) => {
         ? <div>
             <Logo />
             <Rank name={this.state.user.name} entries = {this.state.user.entries} />
-            <ImageLinkForm onInputChange = {this.onInputChange} onSubmit = {this.onSubmit}/>
+            <ImageLinkForm onInputChange = {this.onInputChange} onKeyPress ={this.onSubmit} onSubmit = {this.onSubmit}/>
             <FaceRecognition box = {box} imageURL = {imageURL}/>
           </div>
         : (
