@@ -87,7 +87,7 @@ loadUser = (data) => {
 
   onKeyPress = (event) => {
     if (event.key === "Enter") {
-      this.setState({input: event.target.value});
+      this.onSubmit();
     }
     
   }
@@ -145,7 +145,7 @@ loadUser = (data) => {
         ? <div>
             <Logo />
             <Rank name={this.state.user.name} entries = {this.state.user.entries} />
-            <ImageLinkForm onInputChange = {this.onInputChange} onKeyPress ={this.onKeyPress} onSubmit = {this.onSubmit}/>
+            <ImageLinkForm onInputChange = {this.onInputChange} onKeyPress = {this.onKeyPress} onSubmit = {this.onSubmit}/>
             <FaceRecognition box = {box} imageURL = {imageURL}/>
           </div>
         : (
